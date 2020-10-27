@@ -70,14 +70,19 @@
     padding:20px 0
 }
 
-#navWrap #lnb .menuBox { text-align:center; padding:28px 0;
+#navWrap #lnb .depth1 { text-align:center; padding:28px 0;
     border-bottom:1px solid #fff;
 }
-#navWrap #lnb .menuBox li a { display:block; padding:20px 0}
-#navWrap #lnb .menuBox li:first-child a:after {
+#navWrap #lnb .depth1 li a { display:block; padding:20px 0}
+#navWrap #lnb .depth1 > li:first-child > a:after {
     content:'\f107'; font-family:'Font Awesome 5 Free'; font-weight:900;
-    padding:0 5px; 
+    padding:0 10px; 
 }
+#navWrap #lnb .depth2 { background:#fff; color:#000;
+    font-size:24px; display:none;
+}
+#navWrap #lnb .depth2.on { display:block }
+#navWrap #lnb .depth2 li { padding:0}
 #navWrap #lnb .lnbClose { position: absolute; top:20px; left:-40px; 
     font-size:45px; 
 }

@@ -26,7 +26,7 @@
         }
     })
 
-    $('#container').on('click','.shopListContent .shopList a',function(e){
+    $('#container').on('click','.shopListContent .shopList a, .depth1 > li > a, .depth2 > li > a',function(e){
         e.preventDefault()
         var url = this.href;
         var part = $(this).attr('class');
@@ -67,6 +67,39 @@
         $('.searchWrap').toggleClass('on')
 
     })
+
+    // depth1 클릭하면 depth2 열리기
+    $('.depth1 > li > a').on('click',function(e){
+        e.preventDefault()
+            if($(this).next().is('.depth2')){
+                $(this).parent().toggleClass('on')
+                $(this).parent().find('.depth2').stop().slideToggle(300)
+            } else if ( !$(this).next().next().is('.depth2')){
+                var url = $(this).attr('href')
+                $('#container > #content').remove()
+                $('#container').load(url+' #content')
+                $('#navWrap').hide()
+            }
+    })
+    $('.depth2 > li > a').on('click',function(e){
+        e.preventDefault()
+        var url = $(this).attr('href')
+                $('#container > #content').remove()
+                $('#container').load(url+' #content')
+                $('#navWrap').hide()
+    })
+
+   
+
+
+    // depth2 클릭하면 페이지 로드 시키기
+    
+
+    
+        
+        
+        
+    
   
 
 
