@@ -1,0 +1,151 @@
+{
+    "part1":[
+        {
+            "name":"SUNFLAVOUR! PINEAPPLE BOBO",
+            "price":17000,
+            "about":"파인애플 보보의 일러스트가 들어간 썬플레이버 보보 케이스입니다.",
+            "photo":"images/phonecase_01.png"
+        },
+        {
+            "name":"S`MORE PHONECASE",
+            "price":18000,
+            "about":"쿼카가 꼼질꼼질 마쉬를 굽고 있는 디자인의 케이스입니다.",
+            "photo":"images/phonecase_02.jpg"
+        },
+        {
+            "name":"BOBO ACROBATICS",
+            "price":19000,
+            "about":"세가지 색상의 보보들이 삼단으로 합체한 일러스트가 들어간 삼단합체 케이스입니다.",
+            "photo":"images/phonecase_03.jpg"
+        },
+        {
+            "name":"SILICON BOBO BERRY PHONECASE",
+            "price":22000,
+            "about":"보보가 그려진 실리콘 케이스입니다.",
+            "photo":"images/phonecase_04.jpg"
+        },
+        {
+            "name":"S`MORE CASE [Silicon]",
+            "price":20000,
+            "about":"쿼카가 그려진 스모어 실리콘 케이스입니다.",
+            "photo":"images/phonecase_05.jpg"
+        },
+        {
+            "name":"POTATO PHONECASE",
+            "price":15000,
+            "about":"쿼카가 크게 들어간 디자인의 케이스입니다.",
+            "photo":"images/phonecase_06.jpg"
+        }
+    ],
+
+    "part2":[
+        {
+            "name":"Veges Glitter Sticker",
+            "price":4500,
+            "about":"쿼카와 보보가 재배한 귀여운 채소 스티커입니다.",
+            "photo":"images/stickers_01.jpg"
+        },
+        {
+            "name":"Veges Sticker Pack",
+            "price":6000,
+            "about":"귀여운 채소 모양 스티커가 들어가있는 스티커팩입니다.",
+            "photo":"images/stickers_02.jpg"
+        },
+        {
+            "name":"We are Family Sticker",
+            "price":4000,
+            "about":"쿼카 패밀리가 멋지게 옷을 갖춰 입은 귀여운 스티커입니다.",
+            "photo":"images/stickers_03.jpg"
+        },
+        {
+            "name":"S`MORE QUOKKA STICKER",
+            "price":8000,
+            "about":"귀여운 쿼카 일러스트의 스티커입니다.",
+            "photo":"images/stickers_04.jpg"
+        },
+        {
+            "name":"[Quokka] Sticker Pack",
+            "price":7500,
+            "about":"각기 다른 칼선과 디자인, 용도가 있는 스티커팩입니다.",
+            "photo":"images/stickers_05.jpg"
+        },
+        {
+            "name":"GUMMY BOBO STICKER",
+            "price":9000,
+            "about":"귀여운 보보 모양 조각 스티커입니다.",
+            "photo":"images/stickers_06.jpg"
+        }
+    ],
+
+    "part3":[
+        {
+            "name":"S'more Socks",
+            "price":9000,
+            "about":"SIZE : UNISEX 230-275mm",
+            "photo":"images/socks_01.jpg"
+        },
+        {
+            "name":"OREO BOBO Socks",
+            "price":10000,
+            "about":"SIZE : UNISEX 230-275mm",
+            "photo":"images/socks_02.jpg"
+        },
+        {
+            "name":"BOBO Pattern Socks",
+            "price":8500,
+            "about":"SIZE : UNISEX 230-275mm",
+            "photo":"images/socks_03.jpg"
+        },
+        {
+            "name":"Quokka Socks",
+            "price":7000,
+            "about":"SIZE : UNISEX 230-275mm",
+            "photo":"images/socks_04.jpg"
+        },
+        {
+            "name":"Marsh Socks",
+            "price":11000,
+            "about":"SIZE : UNISEX 230-275mm",
+            "photo":"images/socks_05.jpg"
+        }
+    ],
+
+    "part4":[
+        {
+            "name":"BOBO Burger Pouch",
+            "price":15000,
+            "about":"보보의 얼굴이 귀엽게 표현된 햄버거 모양의 파우치입니다.",
+            "photo":"images/bag_01.jpg"
+        },
+        {
+            "name":"QUOKKA Burger Pouch",
+            "price":15000,
+            "about":"쿼카의 얼굴이 귀엽게 표현된 햄버거 모양의 파우치입니다.",
+            "photo":"images/bag_02.jpg"
+        },
+        {
+            "name":"BOBO DENIM BAG",
+            "price":16000,
+            "about":"여름과 잘 어울리는 데님 소재에 귀여운 보보가 프린팅 된 작은 데님 에코백입니다",
+            "photo":"images/bag_03.jpg"
+        },
+        {
+            "name":"ORANGE BOBO STRING POUCH",
+            "price":13000,
+            "about":"편하게 사용하기 좋은 보보 캔버스 파우치입니다.",
+            "photo":"images/bag_04.jpg"
+        },
+        {
+            "name":"MARSH STRING POUCH",
+            "price":14500,
+            "about":"편하게 사용하기 좋은 마쉬 캔버스 파우치입니다.",
+            "photo":"images/bag_05.jpg"
+        },
+        {
+            "name":"BOBO PVC POUCH",
+            "price":9000,
+            "about":"귀여운 보보 일러스트가 들어간 보보 펜슬케이스입니다",
+            "photo":"images/bag_06.jpg"
+        }
+    ]
+}
