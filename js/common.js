@@ -83,6 +83,8 @@
             }
             return false;
     })
+
+    // depth2 클릭하면 페이지 로드
     $('.depth2 > li > a').on('click',function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -90,11 +92,16 @@
                 $('#container').load(url+' #content')
                 $('#navWrap').hide()
     })
+    
+
+    // about 페이지 footerBg 숨기기
+    // $('#content ul > li > nth-of-type(4)').on('click',function(){
+    //     $('#footer .footerBg').hide()
+    // })
 
    
 
 
-    // depth2 클릭하면 페이지 로드 시키기
     
 
     

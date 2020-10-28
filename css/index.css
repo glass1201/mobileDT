@@ -28,7 +28,7 @@
     font-size:32px; color:#fff;
     padding:20px 0;
 }
-#header h1 { font-size:43px; padding-left:30px; }
+#header h1 { font-size:46px; padding-left:26px; }
 #header h1 span:first-child { color:#fff38d}
 #header h1 span:last-child { color:#9dd9ff }
 #header .topmenu { display:flex; justify-content: flex-end;}
@@ -204,19 +204,40 @@
 }
 
 /* ABOUT (about.html)*/
+.aboutWrap { font-family: 'Noto Sans JP', sans-serif;
+    color:#333 ; text-align: center;}
+.aboutimg { display:grid; grid-template-columns: 33.3% 33.3% 33.3%; 
+}
+.aboutimg img {width:100%;}
+.aboutInfo { padding:10px 0 30px}
+.aboutInfo .infoImg { text-align: center; margin:15px 0 10px;}
+.aboutInfo > p { font-size:17px; font-weight:bold;
+    padding-bottom:10px
+}
+.aboutInfo > a { margin-left:-15px; font-size:14px;
+    text-decoration: underline;
+    padding-bottom:15px;
+    display:block;
+}
+.aboutInfo i { padding:0 5px }
+.aboutInfo .aboutTxt { padding:15px;
+    font-size:14px; color:#888
+}
 
-/* part1 상품리스트 (part1.html)*/
+
+/* part 상품리스트 (part.html)*/
 .part1Wrap .case-overlay { border-radius: 30px; overflow: hidden;}
-.part1Wrap ul { color:#000; display:grid; grid-template-columns:50% 50%;}
+.part1Wrap ul { color:#000; display:grid; grid-template-columns:50% 50%;
+    font-family: 'Noto Sans JP', sans-serif; font-weight:400;
+ }
 .part1Wrap ul li { margin:20px; text-align:center; }
 .part1Wrap ul li img { width:100%; }
 .part1Wrap ul li h2 { font-size:16px; font-weight:bold;
     padding:15px 0 5px
 }
+
 .part1Wrap ul li p:nth-of-type(1) { font-size:15px; font-weight:bold;}
 .part1Wrap ul li p:nth-of-type(2) { font-size:13px; padding:8px 0 0; color:#aaa}
-
-
 
 
 /* 푸터 구역 */
