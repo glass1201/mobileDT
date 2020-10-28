@@ -26,7 +26,7 @@
     display:flex; justify-content: space-between;
     font-family: 'Staatliches', cursive;
     font-size:32px; color:#fff;
-    padding:20px 0;
+    padding:18px 0;
 }
 #header h1 { font-size:46px; padding-left:26px; }
 #header h1 span:first-child { color:#fff38d}
@@ -35,14 +35,14 @@
 #header .topmenu { padding-right:20px; }
 #header .topmenu i { vertical-align: bottom; padding:0 10px;
     cursor:pointer;
-    margin-top:10px;
+    margin-top:13px;
 } 
 
 /* 서브페이지 타이틀 */
 #content { min-height:459px; margin-top:90px;}
 #content .contTit { background:#333; color:#fff;
     display:grid; grid-template-columns:45px auto;}
-#content .prev { margin-top:15px; margin-left:10px;}
+#content .prev { margin-top:18px; margin-left:7px;}
 #content .prev i { font-size:28px; }
 #content .contTit h2 { font-size:30px;  text-align:center; 
     height:50px; line-height:50px; margin-left:-40px;
@@ -237,7 +237,7 @@
 }
 
 .part1Wrap ul li p:nth-of-type(1) { font-size:15px; font-weight:bold;}
-.part1Wrap ul li p:nth-of-type(2) { font-size:13px; padding:8px 0 0; color:#aaa}
+.part1Wrap ul li p:nth-of-type(2) { font-size:13px; padding:8px 0 0; color:#777}
 
 
 /* 푸터 구역 */

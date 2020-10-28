@@ -34,13 +34,13 @@
         $('#container').load(url+' #content', function(){
             var newContent = '';
             for ( var i in usedata[part]){
-                var price = '&#8361;'+ usedata[part][i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                var pprice = '&#8361; ' + usedata[part][i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
                 newContent += `<li><a href="#"><div class="case-overlay"><img src="${usedata[part][i].photo}" alt=""></div>`
                 newContent += `<h2>${usedata[part][i].name}</h2>`
-                newContent += `<p>${price}</p>`
+                newContent += `<p>${pprice}</p>`
                 newContent += `<p>${usedata[part][i].about}</p></a></li>`
-                $('#content .part1Wrap').html(`<ul>${newContent}</ul>`)
             }
+            $('#content .part1Wrap').html(`<ul>${newContent}</ul>`)
         })
     })
 
