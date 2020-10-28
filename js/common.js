@@ -71,7 +71,7 @@
     })
 
     // depth1 클릭하면 depth2 열리기
-    $('.depth1 > li > a').on('click',function(){
+    $('.depth1 > li > a, .navBtn a').on('click',function(){
             if($(this).next().is('.depth2')){
                 $(this).parent().toggleClass('on')
                 $(this).parent().find('.depth2').stop().slideToggle(300)
