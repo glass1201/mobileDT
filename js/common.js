@@ -44,7 +44,8 @@
     })
 
     // 햄버거 버튼 클릭하면 네비박스 열고 X 버튼 클릭하면 닫기
-    $('.topmenu .menu').on('click',function(){
+    $('.topmenu .menu').on('click',function(e){
+        e.preventDefault()
         $('#navWrap').css({
             display:'block'
         }),
