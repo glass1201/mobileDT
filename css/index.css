@@ -86,6 +86,7 @@
 }
 #navWrap #lnb .depth2.on { display:block }
 #navWrap #lnb .depth2 li { padding:0}
+#navWrap #lnb .navImg img { width:100%; }
 #navWrap #lnb .lnbClose { position: absolute; top:20px; left:-40px; 
     font-size:45px; 
 }
