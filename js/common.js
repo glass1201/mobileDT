@@ -26,7 +26,7 @@
         }
     })
 
-    $('#container').on('click','.shopListContent .shopList a, .depth1 > li > a, .depth2 > li > a',function(e){
+    $('#wrap').on('click','.shopListContent .shopList a, .depth2 > li > a',function(e){
         e.preventDefault()
         var url = this.href;
         var part = $(this).attr('class');
@@ -34,9 +34,10 @@
         $('#container').load(url+' #content', function(){
             var newContent = '';
             for ( var i in usedata[part]){
+                var price = '&#8361;'+ usedata[part][i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
                 newContent += `<li><a href="#"><div class="case-overlay"><img src="${usedata[part][i].photo}" alt=""></div>`
                 newContent += `<h2>${usedata[part][i].name}</h2>`
-                newContent += `<p>${usedata[part][i].price}</p>`
+                newContent += `<p>${price}</p>`
                 newContent += `<p>${usedata[part][i].about}</p></a></li>`
                 $('#content .part1Wrap').html(`<ul>${newContent}</ul>`)
             }
@@ -70,8 +71,7 @@
     })
 
     // depth1 클릭하면 depth2 열리기
-    $('.depth1 > li > a').on('click',function(e){
-        e.preventDefault()
+    $('.depth1 > li > a').on('click',function(){
             if($(this).next().is('.depth2')){
                 $(this).parent().toggleClass('on')
                 $(this).parent().find('.depth2').stop().slideToggle(300)
@@ -81,6 +81,7 @@
                 $('#container').load(url+' #content')
                 $('#navWrap').hide()
             }
+            return false;
     })
     $('.depth2 > li > a').on('click',function(e){
         e.preventDefault()

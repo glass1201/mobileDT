@@ -144,8 +144,42 @@
         {
             "name":"BOBO PVC POUCH",
             "price":9000,
-            "about":"귀여운 보보 일러스트가 들어간 보보 펜슬케이스입니다",
+            "about":"귀여운 보보 일러스트가 들어간 보보 펜슬케이스입니다.",
             "photo":"images/bag_06.jpg"
         }
+    ],
+
+    "part5":[
+        {
+            "name":"MARSH PENCIL POUCH",
+            "price":20000,
+            "about":"뽀글뽀글 귀여운 양털 재질의 마쉬  펜슬 파우치입니다.",
+            "photo":"images/sale_01.jpg"
+        },
+        {
+            "name":"SNOW IN MARSHVILLE WAPPEN",
+            "price":3500,
+            "about":"귀여운 일러스트로 제작된 겨울 와펜 시리즈입니다.",
+            "photo":"images/sale_02.jpg"
+        },
+        {
+            "name":"WINTER BOBO KEYCHAIN",
+            "price":12000,
+            "about":"겨울에 귀엽게 사용하기 좋은 보보 윈터 키링입니다.",
+            "photo":"images/sale_03.jpg"
+        },
+        {
+            "name":"Fluffy Marsh Pouch",
+            "price":13000,
+            "about":"양모 느낌의 재질로 되어있어서 겨울과 잘 어울리는 스트링 파우치입니다.",
+            "photo":"images/sale_04.jpg"
+        },
+        {
+            "name":"Quokka Winter Keyring - Snowman",
+            "price":10000,
+            "about":"겨울에 귀엽게 사용하기 좋은 쿼카 윈터 키링입니다.",
+            "photo":"images/sale_05.jpg"
+        }
+        
     ]
 }

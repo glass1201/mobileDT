@@ -14,6 +14,9 @@
     .onlyMobile { display:none; }
 }
 
+/* container 최소높이 */
+#container { min-height:459px;}
+
 /* 헤더 구역 */
 #header { height:90px;
     position:fixed; left:0; right:0; top:0;  z-index:9999999999;
@@ -207,11 +210,11 @@
 .part1Wrap ul { color:#000; display:grid; grid-template-columns:50% 50%;}
 .part1Wrap ul li { margin:20px; text-align:center; }
 .part1Wrap ul li img { width:100%; }
-.part1Wrap ul li h2 { font-size:17px; font-weight:bold;
-    padding:5px 0
+.part1Wrap ul li h2 { font-size:16px; font-weight:bold;
+    padding:15px 0 5px
 }
-.part1Wrap ul li p:nth-of-type(1) { font-size:16px; font-weight:bold;}
-.part1Wrap ul li p:nth-of-type(2) { font-size:14px; padding:5px 0; color:#333}
+.part1Wrap ul li p:nth-of-type(1) { font-size:15px; font-weight:bold;}
+.part1Wrap ul li p:nth-of-type(2) { font-size:13px; padding:8px 0 0; color:#aaa}
 
 
 
