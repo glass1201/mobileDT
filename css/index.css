@@ -54,6 +54,7 @@
 #navWrap { position:fixed; top:0; left:0; right:0; bottom:0; z-index:9999999;
     background:rgba(0,0,0,0.5); 
     display:none;
+    overflow:auto;
 }
 #navWrap #lnb { position: absolute; top:0; right:-90%; bottom:0;
     width:65%; background:#194c96; color:#fff;
@@ -169,6 +170,15 @@
 }
 .mainList ul li a { display:block; padding:35px 0;  }
 .mainList ul li a i { padding: 0 5px;}
+.main_noti { background:#333; font-size:14px;
+    padding:0 15px; height:40px;
+    line-height:40px;
+    overflow: hidden;
+}
+.main_noti p::before { content:'\f0a1'; 
+    font-family:'Font Awesome 5 Free'; font-weight:900;
+    padding-right:7px;
+}
 
 /* shoplist (shopList)*/
 .shopListContent { background:#194c96}
@@ -239,6 +249,35 @@
 
 .part1Wrap ul li p:nth-of-type(1) { font-size:15px; font-weight:bold;}
 .part1Wrap ul li p:nth-of-type(2) { font-size:13px; padding:8px 0 0; color:#777}
+
+/* 로그인(login.html) */
+.loginWrap { background: #eee; padding:100px 0;
+}
+.loginBox { text-align: center;}
+.loginInput input {
+    display:block;
+    width:60%; height:45px;
+    text-indent: 1em;
+    font-size:12px;
+    margin:5px auto;
+    border-radius: 5px;
+}
+.loginBox button { 
+    width:60%; height:45px;
+    color:#fff; background:#333;
+    border-radius:5px;
+    margin-top:5px;
+    font-size:14px;
+}
+.idSave { text-align: center; padding:15px 0;}
+.idSave label { font-size:12px; color:#333; }
+.findidpw { text-align:center}
+.findidpw a { font-size: 12px; color:#333; }
+.findidpw a:after { content:'|'; padding:0 10px; color:#555;
+  
+}
+.findidpw a:last-child:after { display: none;}
+
 
 
 /* 푸터 구역 */

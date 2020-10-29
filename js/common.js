@@ -1,5 +1,6 @@
 (function($){
     // 페이지 로드 시키기
+    $('#container > #content').load('main.html')
     $('body').on('click','#header h1 a, #footer .footerMenu a, #content .contTit a, #content .mainList a, #navWrap a',function(e){
         e.preventDefault()
         var url = $(this).attr('href')
@@ -69,6 +70,18 @@
         $('.searchWrap').toggleClass('on')
 
     })
+
+    // 섹션구역 한줄 광고 슬라이딩
+    setInterval(noti, 3000)
+    function noti(){
+        $('.main_noti p').eq(0).animate({
+            marginTop:'-45px'
+        },500,function(){
+            $(this).appendTo('.main_noti').css({
+                marginTop:'0px'
+            })
+        })
+    }
 
     // depth1 클릭하면 depth2 열리기
     $('.depth1 > li > a, .navBtn a').on('click',function(){
