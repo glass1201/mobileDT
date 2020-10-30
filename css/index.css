@@ -303,10 +303,6 @@
     vertical-align:middle; 
 }
 .joinWrap table th:before { content:'*'; padding:0 7px; color:#194c96}
-.joinWrap table tr { 
-    border:1px solid #999;
-    border-left:none; border-right:none;
-}
 .joinWrap table tr input { width:200px; height:30px;
     text-indent:0.5em;
     border-radius: 5px;
