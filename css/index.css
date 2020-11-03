@@ -257,7 +257,7 @@
 .part1Wrap ul li p:nth-of-type(2) { font-size:12px; padding:8px 0 0; color:#777}
 
 /* 로그인(login.html) */
-.loginWrap { background: #eee; padding:100px 0;
+.loginWrap { background: #eee; padding:130px 0;
 }
 .loginBox { text-align: center;}
 .loginInput ::placeholder { font-size:11px }
@@ -298,7 +298,7 @@
     border-radius: 5px; 
 }
 .joinWrap .pilsoo { padding:15px 20px; 
-    font-size:14px; color:#194c96;
+    font-size:12px; color:#194c96;
     font-weight: bold;
 }
 .joinWrap table button { 
@@ -313,7 +313,8 @@
 .joinWrap table tr input { width:200px; height:30px;
     text-indent:0.5em;
     border-radius: 5px;
-    margin:10px 0
+    margin:10px 0;
+    
 }
 ::placeholder { font-size:12px; color:#aaa}
 .joinWrap table .w95 { width:70px;}
