@@ -22,7 +22,7 @@
 }
 
 /* container 최소높이 */
-#container { min-height:459px;}
+#container { min-height:300px;}
 
 /* 헤더 구역 */
 #header { height:78px;
@@ -49,12 +49,12 @@
 } 
 
 /* 서브페이지 타이틀 */
-#content { min-height:459px; margin-top:78px;}
+#content { min-height:300px; margin-top:78px;}
 #content .contTit { background:#333; color:#fff;
     display:grid; grid-template-columns:45px auto;}
 #content .prev { margin-top:18px; margin-left:7px;}
-#content .prev i { font-size:28px; }
-#content .contTit h2 { font-size:30px;  text-align:center; 
+#content .prev i { font-size:24px; }
+#content .contTit h2 { font-size:26px;  text-align:center; 
     height:50px; line-height:50px; margin-left:-40px;
     margin-top:5px;
     font-family: 'Staatliches', cursive;
@@ -69,37 +69,35 @@
 #navWrap #lnb { position: absolute; top:0; right:-90%; bottom:0;
     width:65%; background:#194c96; color:#fff;
 }
-#navWrap #lnb h2 { font-size:43px;
+#navWrap #lnb h2 { font-size:37px;
     text-align:center; padding:18px 0;
-    
- 
 }
 #navWrap #lnb span:first-child { color:#fff38d }
 #navWrap #lnb span:last-child { color:#9dd9ff }
 #navWrap #lnb .navBtn { display:grid; grid-template-columns:50% 50%;
-    text-align: center; font-size:27px;
+    text-align: center; font-size:22px;
     background:#333; color:#fff
 }
 #navWrap #lnb .navBtn a { display:block;
-    padding:20px 0
+    padding:15px 0
 }
 
-#navWrap #lnb .depth1 { text-align:center; padding:28px 0;
+#navWrap #lnb .depth1 { text-align:center; padding:10px 0;
     border-bottom:1px solid #fff;
+    font-size:23px
 }
-#navWrap #lnb .depth1 li a { display:block; padding:20px 0}
+#navWrap #lnb .depth1 li a { display:block; padding:15px 0}
 #navWrap #lnb .depth1 > li:first-child > a:after {
     content:'\f107'; font-family:'Font Awesome 5 Free'; font-weight:900;
     padding:0 10px; 
 }
 #navWrap #lnb .depth2 { background:#fff; color:#000;
-    font-size:24px; display:none;
+    font-size:20px; display:none;
 }
 #navWrap #lnb .depth2.on { display:block }
-#navWrap #lnb .depth2 li { padding:0}
 #navWrap #lnb .navImg img { width:100%; }
-#navWrap #lnb .lnbClose { position: absolute; top:20px; left:-40px; 
-    font-size:45px; 
+#navWrap #lnb .lnbClose { position: absolute; top:20px; left:-35px; 
+    font-size:38px; 
 }
 #navWrap #lnb .lnbClose i { cursor:pointer}
 
@@ -107,29 +105,30 @@
 .mypageWrap { background:#fff; color:#333;
 }
 .mypageWrap h3 { text-align:center;
-    padding-top:25px;
-    padding-bottom:5px
+    padding-top:15px;
+    padding-bottom:0px;
+    font-size:23px;
 }
-.mypageList { font-size:12px; font-family:'맑은고딕'; font-weight:bold}
+.mypageList { font-size:11px; font-family:'맑은고딕'; font-weight:bold}
 .mypageList ul { display:grid; grid-template-columns: 50% 50%;}
 .mypageList ul li a { display:block; text-align: center;
-    padding:25px 0;
+    padding:20px 0;
 }
 .mypageList ul li:nth-child(1) a:before {
     content:'\f07a'; font-family:'Font Awesome 5 Free'; font-weight:900;
-    display:block; font-size:30px;
+    display:block; font-size:26px;
 }
 .mypageList ul li:nth-child(2) a:before {
     content:'\f004'; font-family:'Font Awesome 5 Free'; font-weight:400;
-    display:block; font-size:30px;
+    display:block; font-size:26px;
 }
 .mypageList ul li:nth-child(3) a:before {
     content:'\f53a'; font-family:'Font Awesome 5 Free'; font-weight:900;
-    display:block; font-size:30px;
+    display:block; font-size:26px;
 }
 .mypageList ul li:nth-child(4) a:before {
     content:'\f4fe'; font-family:'Font Awesome 5 Free'; font-weight:900;
-    display:block; font-size:30px;
+    display:block; font-size:26px;
 }
 
 
@@ -177,9 +176,9 @@
     background:#fff;
     margin:10px
 }
-.mainList ul li a { display:block; padding:30px 0;  }
+.mainList ul li a { display:block; padding:27px 0;  }
 .mainList ul li a i { padding: 0 5px;}
-.main_noti { background:#333; font-size:13px;
+.main_noti { background:#333; font-size:12px;
     padding:0 15px; height:40px;
     line-height:40px;
     overflow: hidden;
@@ -190,31 +189,29 @@
 }
 
 /* shoplist (shopList)*/
-.shopListContent { background:#194c96}
+.shopListContent { background:#194c96;  padding:5px 0;}
 .shopList { color:#333; font-family: 'Staatliches', cursive;
-    
 }
 .shopList ul { display:grid; grid-template-columns: 50% 50%;
-    padding:5px 0;
-    margin-top:10px;
+    padding-top:5px
 }
 .shopList ul li { text-align:center;
-    font-size:28px;
+    font-size:22px;
     border-radius:10px;
     background:#fff;
     margin:5px;
 }
-.shopList ul li a { display:block; padding:40px 0;  }
+.shopList ul li a { display:block; padding:32px 0;  }
 .shopList ul li a i { padding: 0 5px;}
 
 /* FAQ (service.html)*/
 .svListWrap { background:#333; width:100%; padding-bottom:10px;  }
 .svListInner.row2 { width:95%; background:#fff; color:#333;
-    font-size:14px;
+    font-size:12px;
     margin:0 auto; padding:20px 10px;
     border-radius:7px;   
 }
-.svListInner h3 { font-size:15px; font-weight:bold;
+.svListInner h3 { font-size:13px; font-weight:bold;
     padding:20px 0 5px;
 }
 
@@ -231,17 +228,17 @@
 .aboutimg img {width:100%;}
 .aboutInfo { padding:10px 0 30px}
 .aboutInfo .infoImg { text-align: center; margin:15px 0 10px;}
-.aboutInfo > p { font-size:17px; font-weight:bold;
+.aboutInfo > p { font-size:16px; font-weight:bold;
     padding-bottom:10px
 }
-.aboutInfo > a { margin-left:-15px; font-size:14px;
+.aboutInfo > a { margin-left:-15px; font-size:13px;
     text-decoration: underline;
     padding-bottom:15px;
     display:block;
 }
 .aboutInfo i { padding:0 5px }
 .aboutInfo .aboutTxt { padding:15px;
-    font-size:14px; color:#888
+    font-size:12px; color:#888
 }
 
 
@@ -252,12 +249,12 @@
  }
 .part1Wrap ul li { margin:20px; text-align:center; }
 .part1Wrap ul li img { width:100%; }
-.part1Wrap ul li h2 { font-size:16px; font-weight:bold;
+.part1Wrap ul li h2 { font-size:14px; font-weight:bold;
     padding:15px 0 5px
 }
 
-.part1Wrap ul li p:nth-of-type(1) { font-size:15px; font-weight:bold;}
-.part1Wrap ul li p:nth-of-type(2) { font-size:13px; padding:8px 0 0; color:#777}
+.part1Wrap ul li p:nth-of-type(1) { font-size:14px; font-weight:bold;}
+.part1Wrap ul li p:nth-of-type(2) { font-size:12px; padding:8px 0 0; color:#777}
 
 /* 로그인(login.html) */
 .loginWrap { background: #eee; padding:100px 0;
@@ -343,7 +340,7 @@
    position: absolute; top:0; bottom:0; left:0; right:0;
    background:rgba(0,0,0,0.2) 
 } */
-.footerMenu { padding:15px; font-size:13px; }
+.footerMenu { padding:15px; font-size:12px; }
 .footerMenu .cscenter { 
     border-top:1px solid #ddd;
     padding:12px;
