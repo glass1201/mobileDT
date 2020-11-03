@@ -328,9 +328,16 @@
    margin:20px 0 10px
 }
 
-
-
-
+/* 개인정보약관 (privacy.html)*/
+.pvWrap { background:#333; width:100%; padding-bottom:10px;  }
+.pvtxt.row2 { width:95%; background:#fff; color:#333;
+    font-size:12px;
+    margin:0 auto; padding:20px 10px;
+    border-radius:7px;   
+}
+.pvtxt p { font-size:12px; 
+    padding:20px 0 5px;
+}
 
 /* 푸터 구역 */
 #footer { background: #194c96;}
