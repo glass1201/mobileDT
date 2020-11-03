@@ -3,13 +3,20 @@
 
 /* 모바일 전용 디자인 */
 .onlyMobile {
+    background:url(../images/mobile_only.png) no-repeat;
+    background-size:cover;
+    background-position: center;
     position:fixed; top:0; left:0; right:0; bottom:0;
-    background:#194c96; color:#fff;
+    color:rgb(133, 106, 72);
     font-size:25px;
     z-index:99999999999999;
-    display:flex;
-    align-items: center; justify-content: center;
 }
+.onlyMobile .mb-txt { padding-top:250px; text-align: center;
+    font-family: 'Staatliches', cursive;
+}
+.onlyMobile .mb-txt p { padding:10px 0}
+.onlyMobile .mb-txt p:first-child { font-size:35px;}
+.onlyMobile .mb-txt p:last-child { font-family:'맑은고딕'}
 @media screen and ( max-width:768px ){
     .onlyMobile { display:none; }
 }
@@ -18,28 +25,31 @@
 #container { min-height:459px;}
 
 /* 헤더 구역 */
-#header { height:90px;
+#header { height:78px;
     position:fixed; left:0; right:0; top:0;  z-index:9999999999;
 }
 #header .row { 
     background:#194c96;
     display:flex; justify-content: space-between;
     font-family: 'Staatliches', cursive;
-    font-size:32px; color:#fff;
-    padding:18px 0;
+    font-size:27px; color:#fff;
+    padding:20px 0;
 }
-#header h1 { font-size:46px; padding-left:26px; }
+#header h1 { font-size:39px; padding-left:20px;
+    line-height: 40px;
+    margin-top:5px;
+}
 #header h1 span:first-child { color:#fff38d}
 #header h1 span:last-child { color:#9dd9ff }
 #header .topmenu { display:flex; justify-content: flex-end;}
 #header .topmenu { padding-right:20px; }
-#header .topmenu i { vertical-align: bottom; padding:0 10px;
+#header .topmenu i { vertical-align:middle; padding:0 6px;
     cursor:pointer;
-    margin-top:13px;
+    margin-top:6px;
 } 
 
 /* 서브페이지 타이틀 */
-#content { min-height:459px; margin-top:90px;}
+#content { min-height:459px; margin-top:78px;}
 #content .contTit { background:#333; color:#fff;
     display:grid; grid-template-columns:45px auto;}
 #content .prev { margin-top:18px; margin-left:7px;}
@@ -125,7 +135,7 @@
 
 /* 헤더 서브 검색창 */
 .searchWrap { position:fixed; top:90px; left:0; right:0;
-    height:75px;
+    height:75px; width:100%;
     background:#333;
     display:none;
 }
@@ -138,7 +148,7 @@
     display:inline-block
 }
 .searchWrap .searchBox input { 
-    width:200px; height:20px;
+    width:150px; height:20px;
     line-height: 20px;
     text-indent:0.8em;
     vertical-align: middle;
@@ -156,21 +166,20 @@
 /* 메인 리스트(main.html)*/
 .mainContent { background:#194c96}
 .mainList { color:#333; font-family: 'Staatliches', cursive;
-    
 }
 .mainList ul { 
     padding:5px 0;
     margin-top:-5px
 }
 .mainList ul li { text-align:center;
-    font-size:29px;
+    font-size:25px;
     border-radius:10px;
     background:#fff;
     margin:10px
 }
-.mainList ul li a { display:block; padding:35px 0;  }
+.mainList ul li a { display:block; padding:30px 0;  }
 .mainList ul li a i { padding: 0 5px;}
-.main_noti { background:#333; font-size:14px;
+.main_noti { background:#333; font-size:13px;
     padding:0 15px; height:40px;
     line-height:40px;
     overflow: hidden;
@@ -334,14 +343,14 @@
    position: absolute; top:0; bottom:0; left:0; right:0;
    background:rgba(0,0,0,0.2) 
 } */
-.footerMenu { padding:15px; font-size:14px; }
+.footerMenu { padding:15px; font-size:13px; }
 .footerMenu .cscenter { 
     border-top:1px solid #ddd;
     padding:12px;
 }
-.footerMenu .cscenter h2 { font-size:19px; font-weight:bold;
+.footerMenu .cscenter h2 { font-size:16px; font-weight:bold;
     padding-bottom:8px }
-.footerMenu .cscenter p:nth-child(2) { font-size:18px; font-weight:bold ;}
+.footerMenu .cscenter p:nth-child(2) { font-size:16px; font-weight:bold ;}
 .footerMenu .cscenter span { border:1px solid #fff;
     font-size:11px;
     padding:3px; margin-left:5px; 
