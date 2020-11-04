@@ -133,8 +133,8 @@
 
 
 /* 헤더 서브 검색창 */
-.searchWrap { position:fixed; top:90px; left:0; right:0;
-    height:75px; width:100%;
+.searchWrap { position:fixed; top:78px; left:0; right:0;
+    height:70px; width:100%;
     background:#333;
     display:none;
 }
@@ -147,7 +147,7 @@
     display:inline-block
 }
 .searchWrap .searchBox input { 
-    width:150px; height:20px;
+    width:120px; height:20px;
     line-height: 20px;
     text-indent:0.8em;
     vertical-align: middle;

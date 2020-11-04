@@ -1,7 +1,7 @@
 (function($){
     // 페이지 로드 시키기
     $('#container > #content').load('main.html')
-    $('body').on('click','#header h1 a, #footer .footerMenu a, #content .contTit a, #content .mainList a, #navWrap a',function(e){
+    $('body').on('click','#header h1 a, #footer .footerMenu .privacy > a, #content .contTit a, #content .mainList a',function(e){
         e.preventDefault()
         var url = $(this).attr('href')
         $('#container > #content').remove()
@@ -27,7 +27,7 @@
         }
     })
 
-    $('#wrap').on('click','.shopListContent .shopList a, .depth2 > li > a',function(e){
+    $('#wrap').on('click','.shopListContent .shopList a',function(e){
         e.preventDefault()
         var url = this.href;
         var part = $(this).attr('class');
@@ -43,6 +43,26 @@
             }
             $('#content .part1Wrap').html(`<ul>${newContent}</ul>`)
         })
+    })
+
+    $('#wrap').on('click','.depth2 > li > a',function(e){
+        e.preventDefault()
+        var url = this.href;
+        var part = $(this).attr('class');
+        $('#container > #content').remove()
+        $('#container').load(url+' #content', function(){
+            var newContent = '';
+            for ( var i in usedata[part]){
+                var pprice = '&#8361; ' + usedata[part][i].price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                newContent += `<li><a href="#"><div class="case-overlay"><img src="${usedata[part][i].photo}" alt=""></div>`
+                newContent += `<h2>${usedata[part][i].name}</h2>`
+                newContent += `<p>${pprice}</p>`
+                newContent += `<p>${usedata[part][i].about}</p></a></li>`
+            }
+            $('#content .part1Wrap').html(`<ul>${newContent}</ul>`)
+        })
+        $(this).parents('.depth2').slideUp(300)
+        $('#navWrap').hide()
     })
 
     // 햄버거 버튼 클릭하면 네비박스 열고 X 버튼 클릭하면 닫기
@@ -95,15 +115,6 @@
                 $('#navWrap').hide()
             }
             return false;
-    })
-
-    // depth2 클릭하면 페이지 로드
-    $('.depth2 > li > a').on('click',function(e){
-        e.preventDefault()
-        var url = $(this).attr('href')
-                $('#container > #content').remove()
-                $('#container').load(url+' #content')
-                $('#navWrap').hide()
     })
     
 
